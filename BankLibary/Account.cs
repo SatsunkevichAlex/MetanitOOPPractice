@@ -72,19 +72,18 @@
         // Не уверен в этом методе. Нужно потом проверить в консоли.
         public virtual decimal Withdraw(decimal sum)
         {
-            decimal result = 0;
-
-            if (sum <= _sum)
+            decimal accountBalance = 0;
+            if (_sum > sum)
             {
-                _sum -= sum;
-                result = sum;
-                OnWithdrawed(new AccountEventArgs("Sum " + sum + " withdrawed from account " + _id, sum));
+                accountBalance  = _sum - sum;
+                OnWithdrawed(new AccountEventArgs("Sum " + sum + " withdrawed from account " + _id, accountBalance));
+                return accountBalance;
             }
             else
             {
                 OnWithdrawed(new AccountEventArgs("Not enought money on account " + _id, 0));
+                return 0;
             }
-            return result;
         }
 
         protected internal virtual void Open()

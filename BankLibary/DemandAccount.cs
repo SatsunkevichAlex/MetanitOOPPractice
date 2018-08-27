@@ -8,7 +8,7 @@
 
         protected internal override void Open()
         {
-            base.OnOpened(new AccountEventArgs("New demand account opened! Id account : " + this._id, this._sum));
+            base.OnOpened(new AccountEventArgs("New demand account opened! Id account : " + _id, _sum));
         }
     }
 }

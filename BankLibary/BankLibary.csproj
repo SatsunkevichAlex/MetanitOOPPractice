@@ -43,6 +43,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="AccountStateHandler.cs" />
     <Compile Include="DemandAccount.cs" />
+    <Compile Include="DepositAccount.cs" />
     <Compile Include="IAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
