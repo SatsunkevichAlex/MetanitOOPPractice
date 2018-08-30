@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAplication", "BankAplication\BankAplication.csproj", "{98AE1ECB-6E82-4E03-910B-F84C69917A2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApplication", "BankAplication\BankApplication.csproj", "{98AE1ECB-6E82-4E03-910B-F84C69917A2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankLibary", "BankLibary\BankLibary.csproj", "{612A1D7B-0B8A-4021-BD8C-726BBA8F5441}"
 EndProject
