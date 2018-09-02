@@ -81,6 +81,13 @@ namespace BankLibary
             account.Put(sum);
         }
 
+        public decimal ShowBalance(int id)
+        {
+            T account = FindAccount(id);
+
+            return account.CurrentSum;
+        }
+
         public void Withdraw(decimal sum, int id)
         {
             T account = FindAccount(id);

@@ -69,7 +69,7 @@
             OnAdded(new AccountEventArgs("On account added " + sum, sum));
         }
 
-        // Не уверен в этом методе. Нужно потом проверить в консоли.
+        // Не уверен в этом методе. Нужно потом проверить в консоли
         public virtual decimal Withdraw(decimal sum)
         {
             decimal accountBalance = 0;
@@ -102,7 +102,7 @@
         {
             decimal increment = _sum * _percentage / 100;
             _sum += increment;
-            OnCalculated(new AccountEventArgs("Add percents in amout of" + increment, increment));
+            OnCalculated(new AccountEventArgs("Add percents in amout of " + increment, increment));
         }
     }
 }
